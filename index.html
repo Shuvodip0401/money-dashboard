@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Money — 2026-11-05</title>
+<style>
+  :root {
+    --bg:#0d1117; --panel:#161b22; --line:#232a33; --text:#e6edf3;
+    --muted:#8b949e; --accent:#4ade80; --spend:#f97362; --earn:#60a5fa;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+    font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; }
+  .wrap { max-width:1060px; margin:0 auto; padding:22px 16px 60px; }
+  header { display:flex; justify-content:space-between; align-items:baseline;
+    margin-bottom:18px; flex-wrap:wrap; gap:6px; }
+  h1 { font-size:17px; margin:0; font-weight:600; letter-spacing:.2px; }
+  .stamp { color:var(--muted); font-size:12px; }
+  .grid { display:grid; grid-template-columns:1.15fr 1fr; gap:14px; }
+  @media (max-width:760px) { .grid { grid-template-columns:1fr; } }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:14px;
+    padding:16px 18px; }
+  .card h2 { font-size:12px; text-transform:uppercase; letter-spacing:.09em;
+    color:var(--muted); margin:0 0 12px; font-weight:600; }
+  .big { font-size:38px; font-weight:650; letter-spacing:-1px; margin:0; }
+  .big span { font-size:16px; color:var(--muted); font-weight:500; margin-left:6px; }
+  .sub { color:var(--muted); font-size:13px; margin-top:4px; }
+  .split { display:flex; gap:26px; margin-top:16px; }
+  .split div { font-size:13px; color:var(--muted); }
+  .split b { display:block; font-size:18px; color:var(--text); font-weight:600; }
+  .pos b { color:var(--accent); } .neg b { color:var(--spend); }
+  .chart { display:flex; align-items:flex-end; gap:10px; height:118px; margin-top:6px; }
+  .col { flex:1; display:flex; flex-direction:column; align-items:center; gap:6px;
+    height:100%; justify-content:flex-end; }
+  .pair { display:flex; align-items:flex-end; gap:3px; height:96px; }
+  .b { width:11px; border-radius:3px 3px 0 0; display:block; }
+  .b.spend { background:var(--spend); } .b.earn { background:var(--earn); }
+  .lbl { font-size:11px; color:var(--muted); }
+  .legend { display:flex; gap:14px; font-size:12px; color:var(--muted); margin-top:10px; }
+  .dot { display:inline-block; width:8px; height:8px; border-radius:50%; margin-right:5px; }
+  .row { display:grid; grid-template-columns:104px 1fr 74px; align-items:center;
+    gap:10px; padding:5px 0; font-size:13px; }
+  .row .k { color:var(--text); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .row .v { text-align:right; color:var(--muted); font-variant-numeric:tabular-nums; }
+  .track { background:#1e252e; border-radius:99px; height:7px; overflow:hidden; }
+  .fill { display:block; height:100%; background:linear-gradient(90deg,#3b82f6,#4ade80); }
+  .fill.over { background:var(--spend); }
+  .acct { display:flex; justify-content:space-between; padding:9px 0;
+    border-bottom:1px solid var(--line); font-size:14px; }
+  .acct:last-child { border-bottom:0; }
+  .av { font-variant-numeric:tabular-nums; }
+  table { width:100%; border-collapse:collapse; font-size:13.5px; }
+  td { padding:9px 6px; border-bottom:1px solid var(--line); vertical-align:top; }
+  tr:last-child td { border-bottom:0; }
+  .date { color:var(--muted); width:52px; font-variant-numeric:tabular-nums; }
+  .tag { color:var(--muted); font-size:12px; width:96px; }
+  .num { text-align:right; font-variant-numeric:tabular-nums; width:86px; }
+  .num.in { color:var(--accent); }
+  .muted { color:var(--muted); font-size:13px; }
+  .full { grid-column:1 / -1; }
+  footer { color:var(--muted); font-size:12px; margin-top:18px; text-align:center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Money</h1>
+    <span class="stamp">Updated 2026-11-05 · 0 entries · on this Mac</span>
+  </header>
+
+  <div class="grid">
+    <section class="card">
+      <h2>Where the money is</h2>
+      <p class="big">৳0</p>
+      <p class="sub">across 0 accounts</p>
+      <div class="split">
+        <div class="pos">This month<b>+৳0</b></div>
+        <div>Spent<b>৳0</b></div>
+        <div>In<b>৳0</b></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Last six months</h2>
+      <div class="chart"><div class="col"><div class="pair"><span class="b spend" style="height:2px" title="spent 0"></span><span class="b earn" style="height:2px" title="in 0"></span></div><span class="lbl">Jun</span></div><div class="col"><div class="pair"><span class="b spend" style="height:2px" title="spent 0"></span><span class="b earn" style="height:2px" title="in 0"></span></div><span class="lbl">Jul</span></div><div class="col"><div class="pair"><span class="b spend" style="height:2px" title="spent 0"></span><span class="b earn" style="height:2px" title="in 0"></span></div><span class="lbl">Aug</span></div><div class="col"><div class="pair"><span class="b spend" style="height:2px" title="spent 0"></span><span class="b earn" style="height:2px" title="in 0"></span></div><span class="lbl">Sep</span></div><div class="col"><div class="pair"><span class="b spend" style="height:2px" title="spent 0"></span><span class="b earn" style="height:2px" title="in 0"></span></div><span class="lbl">Oct</span></div><div class="col"><div class="pair"><span class="b spend" style="height:2px" title="spent 0"></span><span class="b earn" style="height:2px" title="in 0"></span></div><span class="lbl">Nov</span></div></div>
+      <div class="legend">
+        <span><i class="dot" style="background:var(--spend)"></i>spent</span>
+        <span><i class="dot" style="background:var(--earn)"></i>received</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Accounts</h2>
+      <p class="muted">No accounts added yet.</p>
+    </section>
+
+    <section class="card">
+      <h2>This month by category</h2>
+      <p class="muted">Nothing spent this month yet.</p>
+    </section>
+
+    <section class="card full">
+      <h2>Recent</h2>
+      <table><tbody><tr><td colspan="4" class="muted">No entries yet. Send Khisab a line like “250 lunch bKash” and it appears here.</td></tr></tbody></table>
+    </section>
+
+    
+  </div>
+
+  <footer>Local page · generated from the OpenBot ledger on this Mac</footer>
+</div>
+</body>
+</html>
